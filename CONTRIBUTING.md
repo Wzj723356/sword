@@ -86,7 +86,7 @@ git push origin 你的分支名称
 ## 6.目前可做的贡献
 
 - **修bug**：看见请修一下放到你的分支里（自己建）
-- **作纹理**：看 textures_needed.md[](需要的纹理列表)或 textures_guide.md[](纹理贡献指南)
+- **作纹理**：看 需要的纹理列表[](textures_needed.md)或 纹理贡献指南[](textures_guide.md)
 
 ## 7. 联系方式
 
