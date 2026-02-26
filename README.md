@@ -70,7 +70,7 @@ Minecraft修仙主题模组，为游戏添加完整的修仙系统（纹理没�
 
 ## 贡献
 欢迎提交Issue和Pull Request！
-请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与项目。
+请阅读 [贡献指南](CONTRIBUTING.md) 了解如何参与项目。
 
 ## 许可证
 [MIT License](LICENSE)
@@ -86,3 +86,4 @@ Minecraft修仙主题模组，为游戏添加完整的修仙系统（纹理没�
 
 
 🧙‍♂️ 修仙愉快！✨
+
