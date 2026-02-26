@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "sword:supreme_spirit_stone"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "D": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "pattern": [
+    "SDE",
+    "DSD",
+    "EDS"
+  ],
+  "result": {
+    "item": "sword:transcendent_break_wand"
+  }
+}

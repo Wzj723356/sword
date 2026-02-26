@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "sword:supreme_spirit_stone"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "pattern": [
+    "SBS",
+    "BSB",
+    "SBS"
+  ],
+  "result": {
+    "item": "sword:cultivation_array_item"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "sword:high_grade_spirit_stone"
+    },
+    "G": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "pattern": [
+    "GHG",
+    "HGH",
+    "GHG"
+  ],
+  "result": {
+    "item": "sword:healing_array"
+  }
+}

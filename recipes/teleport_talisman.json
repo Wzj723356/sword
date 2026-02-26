@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "item": "sword:supreme_spirit_stone"
+    }
+  },
+  "pattern": [
+    "SPS",
+    "PSP",
+    "SPS"
+  ],
+  "result": {
+    "item": "sword:teleport_talisman",
+    "count": 2
+  }
+}

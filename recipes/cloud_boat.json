@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "sword:supreme_spirit_stone"
+    },
+    "L": {
+      "item": "sword:low_grade_spirit_stone"
+    }
+  },
+  "pattern": [
+    "LSL",
+    "S S",
+    "L L"
+  ],
+  "result": {
+    "item": "sword:cloud_boat"
+  }
+}

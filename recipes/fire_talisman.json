@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "H": {
+      "item": "sword:high_grade_spirit_stone"
+    }
+  },
+  "pattern": [
+    "HPH",
+    "PHP",
+    "HPH"
+  ],
+  "result": {
+    "item": "sword:fire_talisman",
+    "count": 4
+  }
+}
