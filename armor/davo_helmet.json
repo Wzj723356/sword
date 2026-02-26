@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:models/armor/humanoid",
+  "textures": {
+    "layer1": "sword:models/armor/davo_layer_1"
+  }
+}
