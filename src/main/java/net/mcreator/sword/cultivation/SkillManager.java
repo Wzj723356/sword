@@ -137,7 +137,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.FIRECHARGE_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("火球术！"), true);
     }
 
     private static void castIceShard(Player player, Level level) {
@@ -163,7 +162,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.GLASS_BREAK, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("冰锥术！"), true);
     }
 
     private static void castLightningBolt(Player player, Level level) {
@@ -186,7 +184,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.LIGHTNING_BOLT_THUNDER, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("雷电术！"), true);
     }
 
     private static void castWindBlade(Player player, Level level) {
@@ -209,7 +206,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("风刃术！"), true);
     }
 
     private static void castEarthSpike(Player player, Level level) {
@@ -233,7 +229,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.GRAVEL_BREAK, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("地刺术！"), true);
     }
 
     private static void castHealingLight(Player player, Level level) {
@@ -247,7 +242,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("治疗之光！恢复15点生命"), true);
     }
 
     private static void castShieldBarrier(Player player, Level level) {
@@ -261,7 +255,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.TOTEM_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("护体盾！获得10秒护盾"), true);
     }
 
     private static void castTeleport(Player player, Level level) {
@@ -285,7 +278,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.ENDERMAN_TELEPORT, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("瞬移术！"), true);
     }
 
     private static void castFlyingSword(Player player, Level level) {
@@ -297,7 +289,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.PLAYER_ATTACK_SWEEP, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("御剑术！"), true);
     }
 
     private static void castElementalBurst(Player player, Level level) {
@@ -322,7 +313,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.GENERIC_EXPLODE, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("元素爆发！"), true);
     }
 
     private static void castSpiritualAura(Player player, Level level) {
@@ -336,7 +326,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("灵力光环！攻击力提升15秒"), true);
     }
 
     private static void castBodyFortification(Player player, Level level) {
@@ -350,7 +339,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.ANVIL_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("炼体术！防御力提升11秒"), true);
     }
 
     private static void castSoulResonance(Player player, Level level) {
@@ -364,7 +352,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.EVOKER_CAST_SPELL, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("灵魂共鸣！伤害大幅提升30秒"), true);
     }
 
     private static void castTimeDilation(Player player, Level level) {
@@ -390,7 +377,6 @@ public class SkillManager {
         }
         
         level.playSound(null, player.blockPosition(), SoundEvents.ENDER_EYE_DEATH, SoundSource.PLAYERS, 1.0F, 1.0F);
-        player.displayClientMessage(Component.literal("时间减缓！周围敌人行动变慢"), true);
     }
 
     private static void setCooldown(Player player, CultivationTechnique technique, int ticks) {

@@ -301,8 +301,6 @@ public class ArrayEntity extends Entity {
                     CultivationManager.addExperience(player, 50);
                     if (CultivationManager.checkLevelUp(player)) {
                         player.displayClientMessage(Component.literal("阵法修炼！境界提升！当前境界：" + CultivationManager.getCultivationData(player).getRealm().getDisplayName()), true);
-                    } else {
-                        player.displayClientMessage(Component.literal("阵法修炼！获得50点修仙经验"), true);
                     }
                     triggerCultivationEffect();
                     break;
@@ -383,7 +381,6 @@ public class ArrayEntity extends Entity {
             var enemies = this.level().getEntitiesOfClass(net.minecraft.world.entity.monster.Monster.class, new AABB(this.blockPosition()).inflate(10.0));
             
             if (enemies.isEmpty()) {
-                player.displayClientMessage(Component.literal("攻击法阵发动！范围内没有敌人"), true);
                 return;
             }
             
@@ -400,8 +397,6 @@ public class ArrayEntity extends Entity {
                         1, 0, 0, 0, 0.05);
                 }
             }
-            
-            player.displayClientMessage(Component.literal("攻击法阵发动！对" + damageCount + "个敌人造成伤害"), true);
             
             for (int i = 0; i < 30; i++) {
                 double angle = i * Math.PI * 2 / 30;
@@ -421,7 +416,6 @@ public class ArrayEntity extends Entity {
             var entities = this.level().getEntitiesOfClass(net.minecraft.world.entity.LivingEntity.class, new AABB(this.blockPosition()).inflate(15.0));
             
             if (entities.isEmpty()) {
-                player.displayClientMessage(Component.literal("治疗法阵发动！范围内没有生物"), true);
                 return;
             }
             
@@ -440,8 +434,6 @@ public class ArrayEntity extends Entity {
                         1, 0, 0.1, 0, 0);
                 }
             }
-            
-            player.displayClientMessage(Component.literal("治疗法阵发动！治疗了" + healCount + "个生物"), true);
             
             for (int i = 0; i < 20; i++) {
                 double angle = i * Math.PI * 2 / 20;

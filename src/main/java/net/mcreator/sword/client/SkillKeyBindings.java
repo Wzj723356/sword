@@ -77,10 +77,6 @@ public class SkillKeyBindings {
                 if (data.hasLearnedSkill(skill)) {
                     if (SkillManager.canUseSkill(mc.player, skill)) {
                         SkillManager.useSkill(mc.player, skill);
-                        mc.player.displayClientMessage(
-                            Component.literal("释放技能: " + skill.getDisplayName()), 
-                            true
-                        );
                     }
                 } else {
                     mc.player.displayClientMessage(

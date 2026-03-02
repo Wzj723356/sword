@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "sword:item/medium_grade_spirit_stone"
-  }
-}
