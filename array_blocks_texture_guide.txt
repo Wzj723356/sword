@@ -1,0 +1,33 @@
+===========================================
+法阵方块纹理说明
+===========================================
+
+【法阵方块列表】
+1. cultivation_array.png - 修炼阵方块
+2. training_target.png - 训练靶方块
+3. teleport_array.png - 传送阵方块
+4. attack_array.png - 攻击阵方块
+5. healing_array.png - 治疗阵方块
+
+【说明】
+虽然这些法阵方块主要靠粒子效果显示，但Minecraft的方块系统仍然需要一个纹理文件。
+
+【建议方案】
+1. 使用完全透明的PNG纹理（16x16像素）
+2. 或者暂时使用现有的 space.png 作为占位纹理
+
+【如何创建透明纹理】
+1. 在微软画图中打开一个16x16的新画布
+2. 不绘制任何内容（保持透明）
+3. 保存为PNG格式
+4. 放到 assets/sword/textures/block/ 目录
+
+【临时解决方案】
+如果暂时不想创建纹理，可以复制现有的 space.png 文件并重命名为：
+- cultivation_array.png
+- training_target.png
+- teleport_array.png
+- attack_array.png
+- healing_array.png
+
+这样游戏就不会报错，法阵仍然会正常显示粒子效果。

@@ -1,0 +1,34 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "davod",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Davo",
+    "specialInformation": {
+      "fixedValue": [
+        "上古神器"
+      ]
+    },
+    "creativeTabs": [],
+    "efficiency": 99999.0,
+    "attackSpeed": 0.0,
+    "enchantability": 99999,
+    "damageVsEntity": 0.0,
+    "usageCount": 0,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -1,0 +1,7 @@
+task printSourceSets {
+    doLast {
+        println "Source directories: ${sourceSets.main.java.srcDirs}"
+        println "Includes: ${sourceSets.main.java.includes}"
+        println "Excludes: ${sourceSets.main.java.excludes}"
+    }
+}

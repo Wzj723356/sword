@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "sword:high_grade_spirit_stone"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "DHD",
+    "HDH",
+    "DHD"
+  ],
+  "result": {
+    "item": "sword:attack_array"
+  }
+}

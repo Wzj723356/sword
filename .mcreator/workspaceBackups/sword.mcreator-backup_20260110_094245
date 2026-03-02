@@ -1,0 +1,81 @@
+{
+  "mod_elements": [
+    {
+      "name": "Davo",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "davo"
+    },
+    {
+      "name": "Ffdsf",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ffdsf",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Shen",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shen",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Ddsa",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddsa"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.sword.shen": "神"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/sword.accesswidener",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/sword.mixins.json",
+      "src/main/java/net/mcreator/sword/SwordMod.java",
+      "src/main/java/net/mcreator/sword/ClientInit.java",
+      "src/main/resources/fabric.mod.json",
+      "src/main/java/net/mcreator/sword/init/SwordModTabs.java",
+      "src/main/java/net/mcreator/sword/init/SwordModPaintings.java",
+      "src/main/java/net/mcreator/sword/init/SwordModItems.java",
+      "src/main/java/net/mcreator/sword/mixins/SwordModRepairItemRecipeMixin.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "sword",
+    "modName": "神剑",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "modElementsPackage": "net.mcreator.sword"
+  },
+  "mcreatorVersion": 202500228610
+}

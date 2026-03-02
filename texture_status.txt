@@ -1,0 +1,73 @@
+===========================================
+修仙Mod - 纹理状态检查
+===========================================
+
+【已存在的物品纹理】(7个)
+✓ ddsa.png - DDSA物品
+✓ davo_helmet.png - 达沃头盔
+✓ davo_chestplate.png - 达沃胸甲
+✓ davo_leggings.png - 达沃护腿
+✓ davo_boots.png - 达沃靴子
+✓ davo_shield.png - 达沃盾牌
+✓ davod.png - 达沃物品（可能是davo.png）
+
+【缺失的物品纹理】(29个)
+✗ davo.png - 达沃物品（如果davod不是的话）
+✗ cultivation_staff.png - 修炼法杖
+✗ cultivation_sword.png - 修炼剑
+✗ cultivation_blade.png - 修炼刀
+✗ cultivation_spear.png - 修炼矛
+✗ low_grade_spirit_stone.png - 下品灵石
+✗ medium_grade_spirit_stone.png - 中品灵石
+✗ high_grade_spirit_stone.png - 上品灵石
+✗ supreme_spirit_stone.png - 至尊灵石
+✗ healing_pill.png - 治疗丹
+✗ spirit_gathering_pill.png - 聚灵丹
+✗ foundation_pill.png - 筑基丹
+✗ spiritual_root_reforging_pill.png - 灵根重铸丹
+✗ flying_sword.png - 飞剑
+✗ cloud_boat.png - 云舟
+✗ cultivation_array_item.png - 修炼阵物品
+✗ teleport_array_item.png - 传送阵物品
+✗ attack_array_item.png - 攻击阵物品
+✗ healing_array_item.png - 治疗阵物品
+✗ transcendent_break_wand.png - 超位破阵法杖
+✗ transcendent_detect_wand.png - 超位探阵法杖
+✗ transcendent_seal_wand.png - 超位封阵法杖
+✗ attack_talisman.png - 攻击符
+✗ defense_talisman.png - 防御符
+✗ healing_talisman.png - 治疗符
+✗ lightning_talisman.png - 雷符
+✗ fire_talisman.png - 火符
+✗ ice_talisman.png - 冰符
+✗ wind_talisman.png - 风符
+✗ teleport_talisman.png - 传送符
+
+【已存在的方块纹理】(1个)
+✓ space.png - 空间方块（可能是占位）
+
+【缺失的方块纹理】(5个)
+✗ cultivation_array.png - 修炼阵方块
+✗ training_target.png - 训练靶方块
+✗ teleport_array.png - 传送阵方块
+✗ attack_array.png - 攻击阵方块
+✗ healing_array.png - 治疗阵方块
+
+【总结】
+- 已有物品纹理：7个
+- 缺失物品纹理：29个
+- 已有方块纹理：1个
+- 缺失方块纹理：5个
+- 总共缺失：34个纹理文件
+
+【其他文件】
+- davod.png.mcmeta - 达沃物品的元数据文件
+- djfa.png - 未知物品
+- dres.png - 未知物品
+- range_attack_sword.png - 范围攻击剑（可能是额外添加的）
+- painting/ffdsf.png - 画框纹理
+
+【建议】
+1. 确认 davod.png 是否就是 davo.png
+2. 检查 djfa.png 和 dres.png 是什么物品
+3. 为缺失的34个纹理创建占位纹理或等待用户提供

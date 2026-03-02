@@ -1,0 +1,10 @@
+﻿C:\Users\wangz\MCreatorWorkspaces\sword\src\main\java\net\mcreator\sword\ClientInit.java
+C:\Users\wangz\MCreatorWorkspaces\sword\src\main\java\net\mcreator\sword\DavoItem.java
+C:\Users\wangz\MCreatorWorkspaces\sword\src\main\java\net\mcreator\sword\DdsafsItem.java
+C:\Users\wangz\MCreatorWorkspaces\sword\src\main\java\net\mcreator\sword\DdsaItem.java
+C:\Users\wangz\MCreatorWorkspaces\sword\src\main\java\net\mcreator\sword\SwordMod.java
+C:\Users\wangz\MCreatorWorkspaces\sword\src\main\java\net\mcreator\sword\TestClass.java
+C:\Users\wangz\MCreatorWorkspaces\sword\src\main\java\net\mcreator\sword\init\SwordModItems.java
+C:\Users\wangz\MCreatorWorkspaces\sword\src\main\java\net\mcreator\sword\init\SwordModPaintings.java
+C:\Users\wangz\MCreatorWorkspaces\sword\src\main\java\net\mcreator\sword\init\SwordModTabs.java
+C:\Users\wangz\MCreatorWorkspaces\sword\src\main\java\net\mcreator\sword\mixins\SwordModRepairItemRecipeMixin.java

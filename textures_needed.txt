@@ -1,0 +1,63 @@
+===========================================
+修仙Mod - 需要的纹理列表
+===========================================
+
+【物品纹理】(16x16 PNG格式，放在 assets/sword/textures/item/)
+
+1. davo.png - 达沃物品
+2. ddsa.png - DDSA物品
+3. davo_helmet.png - 达沃头盔
+4. davo_chestplate.png - 达沃胸甲
+5. davo_leggings.png - 达沃护腿
+6. davo_boots.png - 达沃靴子
+7. davo_shield.png - 达沃盾牌
+8. cultivation_staff.png - 修炼法杖
+9. cultivation_sword.png - 修炼剑
+10. cultivation_blade.png - 修炼刀
+11. cultivation_spear.png - 修炼矛
+12. low_grade_spirit_stone.png - 下品灵石
+13. medium_grade_spirit_stone.png - 中品灵石
+14. high_grade_spirit_stone.png - 上品灵石
+15. supreme_spirit_stone.png - 至尊灵石
+16. healing_pill.png - 治疗丹
+17. spirit_gathering_pill.png - 聚灵丹
+18. foundation_pill.png - 筑基丹
+19. spiritual_root_reforging_pill.png - 灵根重铸丹
+20. flying_sword.png - 飞剑
+21. cloud_boat.png - 云舟
+22. cultivation_array_item.png - 修炼阵物品
+23. teleport_array_item.png - 传送阵物品
+24. attack_array_item.png - 攻击阵物品
+25. healing_array_item.png - 治疗阵物品
+26. transcendent_break_wand.png - 超位破阵法杖
+27. transcendent_detect_wand.png - 超位探阵法杖
+28. transcendent_seal_wand.png - 超位封阵法杖
+29. attack_talisman.png - 攻击符
+30. defense_talisman.png - 防御符
+31. healing_talisman.png - 治疗符
+32. lightning_talisman.png - 雷符
+33. fire_talisman.png - 火符
+34. ice_talisman.png - 冰符
+35. wind_talisman.png - 风符
+36. teleport_talisman.png - 传送符
+
+【方块纹理】(16x16 PNG格式，放在 assets/sword/textures/block/)
+
+1. cultivation_array.png - 修炼阵方块
+2. training_target.png - 训练靶方块
+3. teleport_array.png - 传送阵方块
+4. attack_array.png - 攻击阵方块
+5. healing_array.png - 治疗阵方块
+
+【说明】
+- 所有纹理尺寸：16x16像素
+- 文件格式：PNG
+- 物品纹理路径：assets/sword/textures/item/
+- 方块纹理路径：assets/sword/textures/block/
+- 建议使用微软画图或其他像素画工具制作
+- 可以使用无网格模式方便绘制
+
+【总计】
+- 物品纹理：36个
+- 方块纹理：5个
+- 总计：41个纹理文件

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "S S",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "sword:high_grade_spirit_stone"
+    }
+  },
+  "result": {
+    "item": "sword:foundation_pill",
+    "count": 2
+  }
+}

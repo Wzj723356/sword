@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "S S",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "sword:supreme_spirit_stone"
+    }
+  },
+  "result": {
+    "item": "sword:flying_sword",
+    "count": 1
+  }
+}
