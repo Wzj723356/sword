@@ -4,11 +4,11 @@
   "version": "${version}",
   "name": "Let's Cultivate immortality",
   "authors": [
-    "MCreator"
+    "Wzj723356"
   ],
   "contact": {
-    "homepage": "https://mcreator.net",
-    "sources": ""
+    "homepage": "https://github.com/Wzj723356/sword",
+    "sources": "https://github.com/Wzj723356/sword"
   },
   "license": "Not specified",
   "accessWidener": "sword.accesswidener",
