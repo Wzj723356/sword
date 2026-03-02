@@ -32,5 +32,20 @@
   "item.sword.wind_talisman": "风符",
   "item.sword.teleport_talisman": "传送符纸",
   "key.sword.toggle_hud": "切换修为HUD显示",
-  "key.categories.sword": "Let's Cultivate immortality"
+  "key.categories.sword": "修仙系统",
+  "key.categories.sword.skills": "修仙技能",
+  "key.sword.skill.fire_ball": "火球术",
+  "key.sword.skill.ice_shard": "冰锥术",
+  "key.sword.skill.lightning_bolt": "雷电术",
+  "key.sword.skill.wind_blade": "风刃术",
+  "key.sword.skill.earth_spike": "地刺术",
+  "key.sword.skill.healing_light": "治疗之光",
+  "key.sword.skill.shield_barrier": "护体盾",
+  "key.sword.skill.teleport": "瞬移术",
+  "key.sword.skill.flying_sword": "御剑术",
+  "key.sword.skill.elemental_burst": "元素爆发",
+  "key.sword.skill.spiritual_aura": "灵力光环",
+  "key.sword.skill.body_fortification": "炼体术",
+  "key.sword.skill.soul_resonance": "灵魂共鸣",
+  "key.sword.skill.time_dilation": "时间减缓"
 }
