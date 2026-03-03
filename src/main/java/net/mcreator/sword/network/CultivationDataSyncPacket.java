@@ -6,6 +6,8 @@ import net.mcreator.sword.SwordMod;
 import net.mcreator.sword.cultivation.CultivationData;
 import net.mcreator.sword.cultivation.CultivationRealm;
 import net.mcreator.sword.cultivation.SpiritualRoot;
+import java.util.Set;
+import java.util.HashSet;
 
 public class CultivationDataSyncPacket implements CultivationPacket {
     private final String realmName;
@@ -14,6 +16,7 @@ public class CultivationDataSyncPacket implements CultivationPacket {
     private final boolean hasStartedCultivation;
     private final int spiritualPower;
     private final int maxSpiritualPower;
+    private final Set<String> learnedSkills;
     
     public CultivationDataSyncPacket(CultivationData data) {
         this.realmName = data.getRealm().name();
@@ -22,6 +25,7 @@ public class CultivationDataSyncPacket implements CultivationPacket {
         this.hasStartedCultivation = data.hasStartedCultivation();
         this.spiritualPower = data.getSpiritualPower();
         this.maxSpiritualPower = data.getMaxSpiritualPower();
+        this.learnedSkills = data.getLearnedSkills();
     }
     
     public CultivationDataSyncPacket(FriendlyByteBuf buffer) {
@@ -31,6 +35,11 @@ public class CultivationDataSyncPacket implements CultivationPacket {
         this.hasStartedCultivation = buffer.readBoolean();
         this.spiritualPower = buffer.readInt();
         this.maxSpiritualPower = buffer.readInt();
+        int skillCount = buffer.readInt();
+        this.learnedSkills = new HashSet<>();
+        for (int i = 0; i < skillCount; i++) {
+            this.learnedSkills.add(buffer.readUtf());
+        }
     }
     
     @Override
@@ -41,6 +50,10 @@ public class CultivationDataSyncPacket implements CultivationPacket {
         buffer.writeBoolean(hasStartedCultivation);
         buffer.writeInt(spiritualPower);
         buffer.writeInt(maxSpiritualPower);
+        buffer.writeInt(learnedSkills.size());
+        for (String skill : learnedSkills) {
+            buffer.writeUtf(skill);
+        }
     }
     
     @Override
@@ -52,6 +65,9 @@ public class CultivationDataSyncPacket implements CultivationPacket {
         data.setHasStartedCultivation(hasStartedCultivation);
         data.setMaxSpiritualPower(maxSpiritualPower);
         data.setSpiritualPower(spiritualPower);
+        for (String skill : learnedSkills) {
+            data.getLearnedSkills().add(skill);
+        }
         
         CultivationDataCache.setCachedData(data);
     }
@@ -69,6 +85,9 @@ public class CultivationDataSyncPacket implements CultivationPacket {
         data.setHasStartedCultivation(hasStartedCultivation);
         data.setMaxSpiritualPower(maxSpiritualPower);
         data.setSpiritualPower(spiritualPower);
+        for (String skill : learnedSkills) {
+            data.getLearnedSkills().add(skill);
+        }
         return data;
     }
 }
