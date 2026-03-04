@@ -89,4 +89,8 @@ git push origin 你的分支名称
 - **Discord**：实时交流（如果有）
 - **Email**：维护者邮箱（可选）
 
+## 7. 可做贡献
+
+- **纹理**：详见[纹理贡献指南](textures_guide.md)和[需要的纹理列表](textures_needed.md)
+
 再次感谢你的贡献！🧙‍♂️✨
