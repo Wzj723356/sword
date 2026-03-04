@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SFS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "sword:supreme_spirit_stone"
+    },
+    "F": {
+      "item": "sword:foundation_pill"
+    }
+  },
+  "result": {
+    "item": "sword:spiritual_root_reforging_pill",
+    "count": 1
+  }
+}

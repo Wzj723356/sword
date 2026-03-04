@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "M": {
+      "item": "sword:medium_grade_spirit_stone"
+    }
+  },
+  "pattern": [
+    "MPM",
+    "PMP",
+    "MPM"
+  ],
+  "result": {
+    "item": "sword:healing_talisman",
+    "count": 4
+  }
+}

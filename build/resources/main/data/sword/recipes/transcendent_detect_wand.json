@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "sword:supreme_spirit_stone"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "C": {
+      "item": "minecraft:compass"
+    }
+  },
+  "pattern": [
+    "SEC",
+    "ESE",
+    "CES"
+  ],
+  "result": {
+    "item": "sword:transcendent_detect_wand"
+  }
+}

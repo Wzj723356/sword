@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "L": {
+      "item": "sword:low_grade_spirit_stone"
+    }
+  },
+  "pattern": [
+    "LPL",
+    "PLP",
+    "LPL"
+  ],
+  "result": {
+    "item": "sword:attack_talisman",
+    "count": 4
+  }
+}
