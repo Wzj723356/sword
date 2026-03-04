@@ -15,7 +15,8 @@ public class CultivationClientPacketHandler {
                 CultivationDataSyncPacket packet = new CultivationDataSyncPacket(buffer);
                 client.execute(() -> {
                     packet.handle(new CultivationPacket.Context(client.level, client.player));
-                    CultivationUI.onCultivationDataReceived();
+                    // 只在手动请求时显示修仙信息，避免刷屏
+                    // CultivationUI.onCultivationDataReceived();
                 });
             }
         );
