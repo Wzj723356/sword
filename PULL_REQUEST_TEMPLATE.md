@@ -1,4 +1,4 @@
-![alt text](image.png)# Pull Request
+# Pull Request
 
 ## 类型
 - [ ] Bug修复
