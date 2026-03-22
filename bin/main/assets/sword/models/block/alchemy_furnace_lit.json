@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "sword:block/alchemy_furnace_front_lit",
+    "north": "sword:block/alchemy_furnace_front_lit",
+    "south": "sword:block/alchemy_furnace_side",
+    "east": "sword:block/alchemy_furnace_side",
+    "west": "sword:block/alchemy_furnace_side",
+    "up": "sword:block/alchemy_furnace_top",
+    "down": "sword:block/alchemy_furnace_bottom"
+  }
+}

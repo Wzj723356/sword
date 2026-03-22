@@ -17,11 +17,15 @@ import com.mojang.blaze3d.platform.InputConstants;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.mcreator.sword.network.CultivationClientPacketHandler;
 import net.mcreator.sword.client.CultivationHUD;
 import net.mcreator.sword.client.ArrayEntityRenderer;
 import net.mcreator.sword.client.SkillKeyBindings;
+import net.mcreator.sword.client.screen.AlchemyFurnaceScreen;
+import net.mcreator.sword.client.screen.RefiningFurnaceScreen;
 import net.mcreator.sword.init.SwordModEntities;
+import net.mcreator.sword.init.SwordModMenus;
 
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
@@ -39,6 +43,9 @@ public class ClientInit implements ClientModInitializer {
 		SkillKeyBindings.register();
 		
 		EntityRendererRegistry.register(SwordModEntities.ARRAY, ArrayEntityRenderer::new);
+		
+		ScreenRegistry.register(SwordModMenus.ALCHEMY_FURNACE, AlchemyFurnaceScreen::new);
+		ScreenRegistry.register(SwordModMenus.REFINING_FURNACE, RefiningFurnaceScreen::new);
 		
 		toggleHUDKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
 			"key.sword.toggle_hud",

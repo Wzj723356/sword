@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=north,lit=false": { "model": "sword:block/refining_furnace" },
+    "facing=south,lit=false": { "model": "sword:block/refining_furnace", "y": 180 },
+    "facing=west,lit=false": { "model": "sword:block/refining_furnace", "y": 270 },
+    "facing=east,lit=false": { "model": "sword:block/refining_furnace", "y": 90 },
+    "facing=north,lit=true": { "model": "sword:block/refining_furnace_lit" },
+    "facing=south,lit=true": { "model": "sword:block/refining_furnace_lit", "y": 180 },
+    "facing=west,lit=true": { "model": "sword:block/refining_furnace_lit", "y": 270 },
+    "facing=east,lit=true": { "model": "sword:block/refining_furnace_lit", "y": 90 }
+  }
+}

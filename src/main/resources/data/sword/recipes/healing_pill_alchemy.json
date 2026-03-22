@@ -1,0 +1,20 @@
+{
+  "type": "sword:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "result": {
+    "item": "sword:healing_pill",
+    "count": 2
+  },
+  "cookingtime": 200,
+  "required_realm": 0
+}

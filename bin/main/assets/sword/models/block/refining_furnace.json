@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "sword:block/refining_furnace_front",
+    "north": "sword:block/refining_furnace_front",
+    "south": "sword:block/refining_furnace_side",
+    "east": "sword:block/refining_furnace_side",
+    "west": "sword:block/refining_furnace_side",
+    "up": "sword:block/refining_furnace_top",
+    "down": "sword:block/refining_furnace_bottom"
+  }
+}

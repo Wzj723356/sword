@@ -39,6 +39,10 @@ import net.mcreator.sword.items.TalismanPaper;
 import net.mcreator.sword.items.ArrayItem;
 import net.mcreator.sword.items.MagicWandItem;
 import net.mcreator.sword.items.SkillBook;
+import net.mcreator.sword.items.BlankTalismanPaperItem;
+import net.mcreator.sword.items.TalismanBrushItem;
+import net.mcreator.sword.items.SectCreationToken;
+import net.mcreator.sword.items.SectToken;
 import net.mcreator.sword.cultivation.CultivationTechnique;
 
 public class SwordModItems {
@@ -80,6 +84,19 @@ public class SwordModItems {
 	public static Item ICE_TALISMAN;
 	public static Item WIND_TALISMAN;
 	public static Item TELEPORT_TALISMAN;
+	
+	public static Item ALCHEMY_FURNACE;
+	public static Item REFINING_FURNACE;
+	
+	// 符箓制作系统物品
+	public static Item BLANK_TALISMAN_PAPER;
+	public static Item TALISMAN_BRUSH;
+	public static Item TALISMAN_PAPER;
+	
+	// 宗门系统物品
+	public static Item SECT_CREATION_TOKEN;
+	public static Item SECT_TOKEN;
+	public static Item SPIRIT_TESTING_STONE;
 	
 	// 技能书（主动技能）
 	public static Item FIRE_BALL_BOOK;
@@ -150,6 +167,22 @@ public class SwordModItems {
 		ICE_TALISMAN = register("ice_talisman", new TalismanPaper(TalismanPaper.TalismanType.ICE));
 		WIND_TALISMAN = register("wind_talisman", new TalismanPaper(TalismanPaper.TalismanType.WIND));
 		TELEPORT_TALISMAN = register("teleport_talisman", new TalismanPaper(TalismanPaper.TalismanType.TELEPORT));
+		
+		// 注册炼丹炉
+		ALCHEMY_FURNACE = register("alchemy_furnace", new BlockItem(SwordModBlocks.ALCHEMY_FURNACE, new Item.Properties()));
+		
+		// 注册炼器炉
+		REFINING_FURNACE = register("refining_furnace", new BlockItem(SwordModBlocks.REFINING_FURNACE, new Item.Properties()));
+		
+		// 注册符箓制作系统物品
+		BLANK_TALISMAN_PAPER = register("blank_talisman_paper", new BlankTalismanPaperItem());
+		TALISMAN_BRUSH = register("talisman_brush", new TalismanBrushItem());
+		TALISMAN_PAPER = register("talisman_paper", new BlockItem(SwordModBlocks.TALISMAN_PAPER, new Item.Properties()));
+		
+		// 注册宗门系统物品
+		SECT_CREATION_TOKEN = register("sect_creation_token", new SectCreationToken());
+		SECT_TOKEN = register("sect_token", new SectToken());
+		SPIRIT_TESTING_STONE = register("spirit_testing_stone", new BlockItem(SwordModBlocks.SPIRIT_TESTING_STONE, new Item.Properties()));
 		
 		// 注册技能书（主动技能）
 		FIRE_BALL_BOOK = register("fire_ball_book", new SkillBook(CultivationTechnique.FIRE_BALL));

@@ -17,7 +17,10 @@ import net.mcreator.sword.init.SwordModPaintings;
 import net.mcreator.sword.init.SwordModItems;
 import net.mcreator.sword.init.SwordModBlocks;
 import net.mcreator.sword.init.SwordModEntities;
+import net.mcreator.sword.init.SwordModBlockEntities;
+import net.mcreator.sword.init.SwordModMenus;
 import net.mcreator.sword.network.CultivationPacketHandler;
+import net.mcreator.sword.network.SectCreationPacket;
 import net.mcreator.sword.version.VersionDetector;
 import net.mcreator.sword.cultivation.CultivationManager;
 import net.mcreator.sword.cultivation.CultivationData;
@@ -47,12 +50,15 @@ public class SwordMod implements ModInitializer {
 		SwordModEntities.load();
 		SwordModBlocks.load();
 		SwordModItems.load();
+		SwordModBlockEntities.load();
+		SwordModMenus.load();
 
 		SwordModTabs.load();
 
 		SwordModPaintings.load();
 
 		CultivationPacketHandler.register();
+		SectCreationPacket.register();
 
 		// 注册服务器tick事件监听器，处理灵力恢复和技能冷却
 		ServerTickEvents.END_SERVER_TICK.register(server -> {
