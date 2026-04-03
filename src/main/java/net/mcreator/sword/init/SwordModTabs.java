@@ -92,6 +92,9 @@ public class SwordModTabs {
 							entries.accept(SwordModItems.SPEAR_INTERMEDIATE_BOOK);
 							entries.accept(SwordModItems.SPEAR_ADVANCED_BOOK);
 							entries.accept(SwordModItems.SPEAR_MASTER_BOOK);
+							
+							// 特殊物品
+							entries.accept(SwordModItems.傻龙X1);
 						})
 						.build());
 	}

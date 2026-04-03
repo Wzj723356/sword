@@ -25,14 +25,18 @@ public class RefiningFurnaceScreenHandler extends AbstractContainerMenu {
     private final Level level;
     private final ContainerData data;
 
+    public RefiningFurnaceScreenHandler(int id, Inventory inventory) {
+        this(id, inventory, null, new SimpleContainerData(4));
+    }
+
     public RefiningFurnaceScreenHandler(int id, Inventory inventory, FriendlyByteBuf buffer) {
-        this(id, inventory, Objects.requireNonNull(inventory.player.level.getBlockEntity(buffer.readBlockPos())), new SimpleContainerData(4));
+        this(id, inventory, Objects.requireNonNull(inventory.player.level().getBlockEntity(buffer.readBlockPos())), new SimpleContainerData(4));
     }
 
     public RefiningFurnaceScreenHandler(int id, Inventory inventory, BlockEntity blockEntity, ContainerData data) {
         super(SwordModMenus.REFINING_FURNACE, id);
         this.blockEntity = (RefiningFurnaceBlockEntity) blockEntity;
-        this.level = inventory.player.level;
+        this.level = inventory.player.level();
         this.data = data;
 
         addPlayerInventory(inventory);
@@ -61,6 +65,7 @@ public class RefiningFurnaceScreenHandler extends AbstractContainerMenu {
     }
 
     public static void openScreen(net.minecraft.server.level.ServerPlayer player, BlockPos pos) {
+        final BlockPos finalPos = pos;
         player.openMenu(new net.minecraft.world.MenuProvider() {
             @Override
             public Component getDisplayName() {
@@ -69,9 +74,9 @@ public class RefiningFurnaceScreenHandler extends AbstractContainerMenu {
 
             @Override
             public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-                return new RefiningFurnaceScreenHandler(id, inventory, player.level.getBlockEntity(pos), new SimpleContainerData(4));
+                return new RefiningFurnaceScreenHandler(id, inventory, player.level().getBlockEntity(finalPos), new SimpleContainerData(4));
             }
-        }, pos);
+        });
     }
 
     public boolean isCrafting() {

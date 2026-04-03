@@ -25,14 +25,18 @@ public class AlchemyFurnaceScreenHandler extends AbstractContainerMenu {
     private final Level level;
     private final ContainerData data;
 
+    public AlchemyFurnaceScreenHandler(int id, Inventory inventory) {
+        this(id, inventory, null, new SimpleContainerData(4));
+    }
+
     public AlchemyFurnaceScreenHandler(int id, Inventory inventory, FriendlyByteBuf buffer) {
-        this(id, inventory, Objects.requireNonNull(inventory.player.level.getBlockEntity(buffer.readBlockPos())), new SimpleContainerData(4));
+        this(id, inventory, Objects.requireNonNull(inventory.player.level().getBlockEntity(buffer.readBlockPos())), new SimpleContainerData(4));
     }
 
     public AlchemyFurnaceScreenHandler(int id, Inventory inventory, BlockEntity blockEntity, ContainerData data) {
         super(SwordModMenus.ALCHEMY_FURNACE, id);
         this.blockEntity = (AlchemyFurnaceBlockEntity) blockEntity;
-        this.level = inventory.player.level;
+        this.level = inventory.player.level();
         this.data = data;
 
         addPlayerInventory(inventory);
@@ -63,6 +67,7 @@ public class AlchemyFurnaceScreenHandler extends AbstractContainerMenu {
     }
 
     public static void openScreen(net.minecraft.server.level.ServerPlayer player, BlockPos pos) {
+        final BlockPos finalPos = pos;
         player.openMenu(new net.minecraft.world.MenuProvider() {
             @Override
             public Component getDisplayName() {
@@ -71,9 +76,9 @@ public class AlchemyFurnaceScreenHandler extends AbstractContainerMenu {
 
             @Override
             public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-                return new AlchemyFurnaceScreenHandler(id, inventory, player.level.getBlockEntity(pos), new SimpleContainerData(4));
+                return new AlchemyFurnaceScreenHandler(id, inventory, player.level().getBlockEntity(finalPos), new SimpleContainerData(4));
             }
-        }, pos);
+        });
     }
 
     public boolean isCrafting() {

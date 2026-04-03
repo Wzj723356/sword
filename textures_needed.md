@@ -157,6 +157,7 @@
 | spear_intermediate_book.png | ❌ 未完成 | - | 中级枪法功法书 |
 | spear_advanced_book.png | ❌ 未完成 | - | 高级枪法功法书 |
 | spear_master_book.png | ❌ 未完成 | - | 枪法大师功法书 |
+| 傻龙x1.png | ✅ 已完成 | Wzj723356 | 傻龙x1物品纹理 |
 
 ## 提交指南
 

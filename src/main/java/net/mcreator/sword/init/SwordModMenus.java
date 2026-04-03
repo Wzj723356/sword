@@ -1,5 +1,6 @@
 package net.mcreator.sword.init;
 
+import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -15,9 +16,9 @@ public class SwordModMenus {
     public static void load() {
         ALCHEMY_FURNACE = Registry.register(BuiltInRegistries.MENU, 
                 new ResourceLocation(SwordMod.MODID, "alchemy_furnace"),
-                new MenuType<>(AlchemyFurnaceScreenHandler::new));
+                new ExtendedScreenHandlerType<>(AlchemyFurnaceScreenHandler::new));
         REFINING_FURNACE = Registry.register(BuiltInRegistries.MENU, 
                 new ResourceLocation(SwordMod.MODID, "refining_furnace"),
-                new MenuType<>(RefiningFurnaceScreenHandler::new));
+                new ExtendedScreenHandlerType<>(RefiningFurnaceScreenHandler::new));
     }
 }
