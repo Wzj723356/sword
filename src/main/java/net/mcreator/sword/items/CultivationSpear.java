@@ -11,6 +11,7 @@ import net.mcreator.sword.cultivation.CultivationManager;
 import net.mcreator.sword.cultivation.CultivationData;
 import net.mcreator.sword.cultivation.SkillManager;
 import net.mcreator.sword.cultivation.CultivationTechnique;
+import net.mcreator.sword.cultivation.CultivationAttackHandler;
 
 public class CultivationSpear extends SwordItem {
     public CultivationSpear() {
@@ -36,11 +37,8 @@ public class CultivationSpear extends SwordItem {
                     target.hurt(player.level().damageSources().playerAttack(player), 4.0F * (skillMultiplier - 1.0F));
                 }
                 
-                // 消耗少量灵力
-                if (data.getSpiritualPower() >= 2) {
-                    data.consumeSpiritualPower(2);
-                    CultivationManager.saveCultivationData(player, data);
-                }
+                // 应用灵力加持攻击
+                CultivationAttackHandler.handlePlayerAttack(player, target);
             }
         }
         return super.hurtEnemy(stack, target, attacker);

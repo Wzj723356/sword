@@ -9,12 +9,14 @@ import net.mcreator.sword.cultivation.CultivationTechnique;
 import net.mcreator.sword.cultivation.CultivationManager;
 import net.mcreator.sword.cultivation.CultivationData;
 import net.mcreator.sword.cultivation.SkillManager;
+import net.mcreator.sword.cultivation.CultivationPractice;
 import net.mcreator.sword.network.CultivationDataCache;
 import java.util.HashMap;
 import java.util.Map;
 
 public class SkillKeyBindings {
     private static final Map<CultivationTechnique, KeyMapping> skillKeys = new HashMap<>();
+    private static KeyMapping cultivationKey;
     private static final CultivationTechnique[] activeSkills = {
         CultivationTechnique.FIRE_BALL,
         CultivationTechnique.ICE_SHARD,
@@ -60,6 +62,14 @@ public class SkillKeyBindings {
             KeyBindingHelper.registerKeyBinding(keyMapping);
             skillKeys.put(skill, keyMapping);
         }
+        
+        // 注册修炼按键，默认绑定R键
+        cultivationKey = new KeyMapping(
+            "key.sword.cultivate",
+            GLFW.GLFW_KEY_R,
+            "key.categories.sword.cultivation"
+        );
+        KeyBindingHelper.registerKeyBinding(cultivationKey);
     }
     
     public static void tick() {
@@ -67,6 +77,12 @@ public class SkillKeyBindings {
         if (mc.player == null) return;
         
         CultivationData data = CultivationDataCache.getCachedData();
+        
+        // 修炼按键处理（不需要已开始修炼）
+        if (cultivationKey.isDown()) {
+            CultivationPractice.handleCultivation(mc.player);
+        }
+        
         if (data == null || !data.hasStartedCultivation()) return;
         
         for (Map.Entry<CultivationTechnique, KeyMapping> entry : skillKeys.entrySet()) {

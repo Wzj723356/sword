@@ -21,10 +21,11 @@ import net.mcreator.sword.init.SwordModBlockEntities;
 import net.mcreator.sword.init.SwordModMenus;
 import net.mcreator.sword.network.CultivationPacketHandler;
 import net.mcreator.sword.network.SectCreationPacket;
-import net.mcreator.sword.version.VersionDetector;
 import net.mcreator.sword.cultivation.CultivationManager;
 import net.mcreator.sword.cultivation.CultivationData;
 import net.mcreator.sword.cultivation.SkillManager;
+import net.mcreator.sword.sect.SectEventHandler;
+import net.mcreator.sword.cultivation.CultivationAttackHandler;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -36,16 +37,7 @@ public class SwordMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		VersionDetector.initialize();
-		
-		if (!VersionDetector.shouldLoad()) {
-			System.out.println("[Sword Mod] 检测到更高版本的模组已加载，跳过低版本初始化。");
-			System.out.println("[Sword Mod] 当前版本: " + VersionDetector.getCurrentVersion());
-			System.out.println("[Sword Mod] 最新版本: " + VersionDetector.getLatestVersion());
-			return;
-		}
-		
-		System.out.println("[Sword Mod] 初始化模组，版本: " + VersionDetector.getCurrentVersion());
+		System.out.println("[Sword Mod] 初始化模组");
 
 		SwordModEntities.load();
 		SwordModBlocks.load();
@@ -59,6 +51,8 @@ public class SwordMod implements ModInitializer {
 
 		CultivationPacketHandler.register();
 		SectCreationPacket.register();
+		SectEventHandler.register();
+		CultivationAttackHandler.register();
 
 		// 注册服务器tick事件监听器，处理灵力恢复和技能冷却
 		ServerTickEvents.END_SERVER_TICK.register(server -> {
